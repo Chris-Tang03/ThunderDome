@@ -46,7 +46,6 @@ public class Character {
 
 
 
-
     public String toString(){
         String status = "The "+ type+ " "+name+" has " +health+" health and deals "+ power+ " damage on each attack.";
         return status;
