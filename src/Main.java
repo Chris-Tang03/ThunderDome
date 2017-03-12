@@ -13,7 +13,7 @@ public class Main {
         System.out.println("Enter the type of your character");
         String type = scan.nextLine();
         // Random number used for array
-        int selection = ran.nextInt(3);
+        int selection = ran.nextInt(4);
         // Array to hold types
         String types[]= {"Wizard", "Flame Mage", "DodgeBall Champ", "Cyclops"};
         // Give the AI a random type
@@ -30,7 +30,7 @@ public class Main {
 
         System.out.println(AI);
 
-        //check health and attack
+        //check health and then attack
         while(player1.health > 0 || AI.health > 0) {
             player1.attack(AI);
             if(player1.health <= 0){
@@ -39,7 +39,7 @@ public class Main {
             }
             AI.attack(player1);
             if(AI.health <= 0){
-                System.out.println("You win");
+                System.out.println("AI has fallen.You win");
                 break;
             }
 
